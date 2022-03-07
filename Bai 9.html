@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function kiemTra(arr, kyTu) {
+        let flag = false;
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == kyTu) {
+                flag = true;
+                count++;
+            }
+        }
+        if (flag == true) {
+            return count;
+        } else {
+            return -1
+        }
+    }
+
+    document.write("Số lần xuất hiện của ký tự là " + kiemTra([1,2,3,4,5,6,6], 6))
+
+</script>
+
+</body>
+</html>

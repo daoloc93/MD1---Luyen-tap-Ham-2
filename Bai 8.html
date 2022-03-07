@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function daoNguoc(arr) {
+        let first = 0;
+        let last = arr.length;
+
+        while (first < last) {
+            temp = arr[first]
+            arr[first] = arr[last]
+            arr[last] = temp;
+            first ++;
+            last --;
+        }
+
+        document.write("Mảng sau khi sắp xếp: " + arr);
+
+    }
+
+    daoNguoc([3,5,8,9,6,22])
+
+</script>
+
+</body>
+</html>

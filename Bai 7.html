@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let a = 1;
+    let b = 2;
+    let temp = 0;
+
+    document.write(`Trước khi đổi chỗ: a = ${a}, b = ${b} <br>`)
+
+    function doiCho(a,b) {
+        a += b
+        b = a - b;
+        a -= b;
+
+        document.write(`Sau khi đổi chỗ: a = ${a}, b = ${b}`)
+    }
+
+    doiCho(1,2)
+
+</script>
+
+</body>
+</html>

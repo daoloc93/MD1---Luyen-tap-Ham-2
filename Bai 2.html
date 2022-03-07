@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function dienTich(radius) {
+        let a = Math.PI * radius * radius;
+        return a;
+    }
+
+    function chuVi(radius) {
+        let c = 2 * Math.PI * radius;
+        return c;
+    }
+
+    let radius = prompt("Nhập vào bán kính hình tròn (m):")
+    document.write("Chu vi = " + chuVi(radius) + " m <br> Diện tích = " + dienTich(radius) + " m<sup>2</sup>")
+
+</script>
+
+</body>
+</html>
